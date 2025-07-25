@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سرویس پروفسور</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00d0ff;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 35px;
+    }
+
+    .plans-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 10px;
+    }
+
+    .plan {
+      background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+      border: 1px solid #333;
+      border-radius: 20px;
+      padding: 25px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .plan:hover {
+      background: linear-gradient(135deg, #292929, #3a3a3a);
+      transform: translateY(-6px);
+    }
+
+    .plan span {
+      display: block;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #00e5ff;
+    }
+
+    .card-number {
+      display: none;
+      margin-top: 35px;
+      background-color: #1e2b24;
+      border: 1px solid #4caf50;
+      border-radius: 10px;
+      padding: 20px;
+      font-weight: bold;
+      color: #8bc34a;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .support {
+      margin-top: 50px;
+      font-size: 0.95rem;
+    }
+
+    .support a {
+      color: #00b0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .support a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn.openart.ai/uploads/image_5GQ9OKHZ_1717513463501_raw.jpg" alt="سرویس پروفسور">
+  </header>
+
+  <main>
+    <h1>به سرویس پروفسور خوش آمدید 🌟</h1>
+    <h2>یکی از اشتراک‌ها را انتخاب کنید و سپس عکس رسید را به <a href="https://wa.me/989027624618" target="_blank">پشتیبانی</a> ارسال نمایید</h2>
+
+    <div class="plans-title">پلن‌های اشتراک</div>
+    <div class="plans">
+      <div class="plan" onclick="showCard()">سرویس ۱ ماهه <span>۲۰۰,۰۰۰ تومان</span></div>
+      <div class="plan" onclick="showCard()">سرویس ۲ ماهه <span>۳۸۰,۰۰۰ تومان</span></div>
+      <div class="plan" onclick="showCard()">سرویس ۳ ماهه <span>۵۶۰,۰۰۰ تومان</span></div>
+      <div class="plan" onclick="showCard()">سرویس ۶ ماهه <span>۹۹۹,۰۰۰ تومان</span></div>
+    </div>
+
+    <div class="card-number" id="cardNumber">
+      💳 شماره کارت برای پرداخت:<br>
+      <strong>5859-8312-1302-1107</strong>
+    </div>
+
+    <div class="support">
+      برای ارتباط با <a href="https://wa.me/989027624618" target="_blank">پشتیبانی</a> کلیک کنید
+    </div>
+  </main>
+
+  <script>
+    function showCard() {
+      document.getElementById('cardNumber').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
